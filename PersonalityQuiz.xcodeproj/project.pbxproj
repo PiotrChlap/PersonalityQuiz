@@ -15,6 +15,8 @@
 		4391AEDD286F2250001BFF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4391AEDB286F2250001BFF48 /* LaunchScreen.storyboard */; };
 		4391AEE5286F2CA7001BFF48 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AEE4286F2CA7001BFF48 /* QuestionViewController.swift */; };
 		4391AEE7286F2CC9001BFF48 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AEE6286F2CC9001BFF48 /* ResultsViewController.swift */; };
+		4391AEE9286F352A001BFF48 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AEE8286F352A001BFF48 /* Question.swift */; };
+		4391AEEB286F35CF001BFF48 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AEEA286F35CF001BFF48 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4391AEDE286F2250001BFF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4391AEE4286F2CA7001BFF48 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		4391AEE6286F2CC9001BFF48 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		4391AEE8286F352A001BFF48 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4391AEEA286F35CF001BFF48 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				4391AED2286F224E001BFF48 /* SceneDelegate.swift */,
 				4391AED4286F224E001BFF48 /* IntroductionViewController.swift */,
 				4391AED6286F224E001BFF48 /* Main.storyboard */,
+				4391AEE8286F352A001BFF48 /* Question.swift */,
+				4391AEEA286F35CF001BFF48 /* Answer.swift */,
 				4391AEE4286F2CA7001BFF48 /* QuestionViewController.swift */,
 				4391AEE6286F2CC9001BFF48 /* ResultsViewController.swift */,
 				4391AED9286F2250001BFF48 /* Assets.xcassets */,
@@ -147,6 +153,8 @@
 				4391AED5286F224E001BFF48 /* IntroductionViewController.swift in Sources */,
 				4391AED1286F224E001BFF48 /* AppDelegate.swift in Sources */,
 				4391AEE5286F2CA7001BFF48 /* QuestionViewController.swift in Sources */,
+				4391AEEB286F35CF001BFF48 /* Answer.swift in Sources */,
+				4391AEE9286F352A001BFF48 /* Question.swift in Sources */,
 				4391AEE7286F2CC9001BFF48 /* ResultsViewController.swift in Sources */,
 				4391AED3286F224E001BFF48 /* SceneDelegate.swift in Sources */,
 			);
