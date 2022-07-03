@@ -160,7 +160,7 @@ class QuestionViewController: UIViewController {
     }
     @IBAction func rangedAnwerButtonPressed(_ sender: Any) {
         let currentAnswers = questions[questionIndex].answers
-        let index = Int(round(rangedSlider.value + Float(currentAnswers.count - 1)))
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
         chosenAnswers.append(currentAnswers[index])
         nextQuestion()
     }

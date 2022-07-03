@@ -32,7 +32,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="0PC-Iq-cBe" kind="show" id="Zo1-kf-EgH"/>
+                                            <segue destination="0PC-Iq-cBe" kind="presentation" modalPresentationStyle="fullScreen" id="eFr-7o-jwd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,11 +92,11 @@
             <objects>
                 <viewController id="9s2-A4-jOS" customClass="QuestionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9jM-Ax-Xhf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-za-TFw">
-                                <rect key="frame" x="20" y="329" width="374" height="184"/>
+                                <rect key="frame" x="20" y="356" width="374" height="184"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pS-ji-u96">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
@@ -133,7 +133,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ay4-j3-c4t">
-                                <rect key="frame" x="20" y="303.5" width="374" height="235"/>
+                                <rect key="frame" x="20" y="330.5" width="374" height="235"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="125" translatesAutoresizingMaskIntoConstraints="NO" id="iJI-aS-FQo">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
@@ -202,7 +202,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g1r-FS-sG1">
-                                <rect key="frame" x="20" y="360.5" width="374" height="121.5"/>
+                                <rect key="frame" x="20" y="387.5" width="374" height="121.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vwg-iu-Zbm">
                                         <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
@@ -235,13 +235,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wal-tB-Adn">
-                                <rect key="frame" x="20" y="76" width="374" height="38.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WK9-ao-1DI">
-                                <rect key="frame" x="20" y="818" width="374" height="4"/>
+                                <rect key="frame" x="20" y="838" width="374" height="4"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jNu-4f-wKc"/>
@@ -299,11 +299,11 @@
             <objects>
                 <viewController id="gLS-vb-kZM" customClass="ResultsViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kal-aV-EOf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PDL-rs-qba">
-                                <rect key="frame" x="20" y="381" width="374" height="80.5"/>
+                                <rect key="frame" x="20" y="408" width="374" height="80.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-b3-Sk2">
                                         <rect key="frame" x="128.5" y="0.0" width="117" height="60"/>
@@ -330,21 +330,30 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="DZl-Ug-ufE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hZF-IL-xsM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hZF-IL-xsM">
+                            <connections>
+                                <segue destination="s4Q-tc-aQJ" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="amb-KC-bew"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="IeA-b3-Sk2" id="Icq-sW-4R9"/>
+                        <outlet property="resultDefinitionLabel" destination="SpK-Pd-JSs" id="BP8-gj-zov"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaB-W4-QFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="s4Q-tc-aQJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2415.9420289855075" y="83.705357142857139"/>
         </scene>
-        <!--Introduce-->
+        <!--Navigation Controller-->
         <scene sceneID="fET-nk-jWM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0PC-Iq-cBe" customClass="Introduce" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0PC-Iq-cBe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2LY-o1-05w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qxm-op-X3q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
